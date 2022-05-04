@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dd26.github.io/wallet-challenge-a",
   "name": "wallet-challenge-a",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r https://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@github.com/dd26/wallet-challenge-a"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
